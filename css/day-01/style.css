@@ -1,0 +1,26 @@
+/* universal selector */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* tag selector */
+
+p {
+  color: blue;
+}
+
+/* class selector --> .classname */
+
+.heading {
+  color: red;
+  background-color: black;
+}
+
+/* id selector --> #id   */
+
+#my-h1 {
+  color: blueviolet;
+}

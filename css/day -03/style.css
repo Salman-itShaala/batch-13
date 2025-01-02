@@ -1,0 +1,22 @@
+/* cascading */
+
+#unique-h1.my-h1 {
+  color: blue;
+}
+
+.my-h1 {
+  color: red;
+}
+
+h1 {
+  color: blueviolet !important;
+}
+
+.parent .child-h1 {
+  font-size: 100px;
+  color: blue;
+}
+
+p {
+  color: brown;
+}
