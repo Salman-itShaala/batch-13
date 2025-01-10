@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  border: 2px solid red;
+  background-color: blue;
+  color: white;
+}
+
+a {
+  background-color: aqua;
+  border: 1px solid black;
+  color: red;
+  height: 100px;
+  display: inline-block;
+}
+
+p {
+  border: 2px solid black;
+}
+
+div {
+  border: 2px solid black;
+  height: 100px;
+  background-color: blue;
+}

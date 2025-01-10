@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 300px;
+  /* width: 300px; */
+  width: 80%;
+  background-color: black;
+  color: red;
+}
+/* 
+.box:hover {
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
+} */
+
+.box p,
+.box h1 {
+  color: white;
+}
