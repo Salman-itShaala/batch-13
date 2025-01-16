@@ -38,12 +38,6 @@ let city; // undefined
 
 console.log(typeof city);
 
-// error -
-// string - 5
-// undefined - 1
-// null -
-// object
-
 // null
 
 let state = null;
