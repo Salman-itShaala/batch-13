@@ -64,4 +64,8 @@ console.log("10" === 10); // false
 
 // Logical operators
 
+// &&
+// ||
+// !
+
 console.log(10 > 15 && console.log("Kuch Random"));
