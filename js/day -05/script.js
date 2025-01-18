@@ -4,9 +4,7 @@ let num = 23;
 
 // pre-increment
 
-num++;
-
-console.log(num);
+console.log(++num); // 24
 
 // Assignment operator
 
@@ -36,7 +34,7 @@ num3 < num4
 
 const num5 = +"10";
 
-console.log(num5);
+console.log(typeof num5); // number
 
 // let num = 45;
 
@@ -61,8 +59,8 @@ const num7 = 19;
 
 num7 % 2 === 0 ? console.log("Number is even") : console.log("Number is odd");
 
-if (num7 % 2 === 0) {
-  console.log("Number is even");
-} else {
-  console.log("Number is odd");
-}
+// if (num7 % 2 === 0) {
+//   console.log("Number is even");
+// } else {
+//   console.log("Number is odd");
+// }
