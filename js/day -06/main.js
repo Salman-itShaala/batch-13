@@ -51,5 +51,3 @@ if (day === 1) {
 // switch block
 
 // loops
-
-console.log("Hiii");
