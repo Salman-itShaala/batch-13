@@ -27,3 +27,9 @@ const num1 = 20;
 const num2 = 23;
 
 const num3 = 24;
+
+// prime
+// function basics -> what, why, how
+// what are functions
+// why functions
+// how to write
