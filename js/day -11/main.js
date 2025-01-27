@@ -1,6 +1,6 @@
 // find reverse of given number (assume that given number is three digit number) --> 123 - 321
 
-let num = 111121;
+let num = 121;
 const temp = num; // 121
 // const stringNum = 123 + "";
 
@@ -29,10 +29,13 @@ if (reverseNum === temp) {
 // row -> outer
 // cols --> inner
 
-// * * *
-// * * *
+// *
+// * *
 // * * *
 
+//      *
+//    * *
+//  * * *
 for (let i = 1; i <= 3; i++) {
   let pattern = "";
 

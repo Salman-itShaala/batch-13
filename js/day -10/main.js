@@ -33,20 +33,24 @@ for (let i = 1; i <= lastNumber; i++) {
 console.log(sum);
 
 let givenNum = 1233;
-let sumOfDigits = 0;
+
+let stringNum = givenNum + "";
+
+console.log(stringNum.length);
+
+let numOfDigits = 0;
 
 while (givenNum !== 0) {
   // unit digit
   const digit = givenNum % 10;
 
-  //calculating sum
-  sumOfDigits = sumOfDigits + digit;
-
   // deleting numbers last digit
   givenNum = Math.floor(givenNum / 10);
+
+  numOfDigits++;
 }
 
-console.log(sumOfDigits);
+console.log("number of digits in given number ", numOfDigits);
 
 // Todo: - calculate number of digits in given number
 
