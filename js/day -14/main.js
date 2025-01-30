@@ -31,19 +31,21 @@ function sayHello() {
   alert("Hello how are you???");
 }
 
-function primeNumber(num1) {
+function checkPrime(num) {
   let isPrime = true;
 
-  for (let i = 2; i < num1; i++) {
-    if (num1 % i === 0) {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
       isPrime = false;
       break;
     }
   }
-  if (isPrime === true) {
-    console.log(num1);
+
+  if (isPrime) {
+    console.log(num);
   }
 }
+
 for (let i = 2; i <= 100; i++) {
-  primeNumber(i);
+  checkPrime(i);
 }
