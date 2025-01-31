@@ -1,5 +1,9 @@
 const marks = [4.5, 45, 88, 45, 1, 2, 3, 4, 6, 7, 8, 5];
 
+// sort
+// filter
+// delete
+
 // 0 - marks.length
 
 let random = Math.floor(Math.random() * marks.length);
