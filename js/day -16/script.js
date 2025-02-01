@@ -29,6 +29,15 @@ function playGame() {
   const computersChoice = getComputersChoice();
 
   // check who won
+  checkWhoWon(usersChioce, computersChoice);
+}
+
+function getComputersChoice() {
+  let randomIndex = Math.floor(Math.random() * options.length); // 0 , 1, 2
+  return options[randomIndex];
+}
+
+function checkWhoWon(usersChioce, computersChoice) {
   if (
     (usersChioce === "rock" && computersChoice === "scissors") ||
     (usersChioce === "paper" && computersChoice === "rock") ||
@@ -44,36 +53,4 @@ function playGame() {
   } else {
     alert("Draw");
   }
-}
-
-function getComputersChoice() {
-  let randomIndex = Math.floor(Math.random() * options.length); // 0 , 1, 2
-  return options[randomIndex];
-}
-
-function getUsersChoice() {
-  let tempUsersChoice = prompt("Enter your choice");
-
-  // !null --> true
-  // tempUsersChoice === null || tempUsersChoice === ""
-  if (!tempUsersChoice) {
-    console.log("hiii");
-    alert("Enter valid input");
-    getComputersChoice();
-    return;
-  }
-
-  let usersChioce = tempUsersChoice.trim().toLowerCase();
-
-  if (
-    usersChioce !== "rock" &&
-    usersChioce !== "paper" &&
-    usersChioce !== "scissors"
-  ) {
-    alert("Enter valid input");
-    getUsersChoice();
-    return;
-  }
-
-  return usersChioce;
 }
