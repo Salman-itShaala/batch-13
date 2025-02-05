@@ -1,7 +1,9 @@
 const selectedBtn = document.getElementById("btn");
 
-selectedBtn.onclick = handleClick;
+// selectedBtn.onclick = abc;
 
-function handleClick() {
-  console.log("Btn clicked");
+selectedBtn.addEventListener("click", abc);
+
+function abc() {
+  console.log("Btn clicked 123");
 }
