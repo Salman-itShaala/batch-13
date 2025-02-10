@@ -4,12 +4,21 @@ const doSomething = () => {
   console.log("Button is clicked, from arrow fn");
 };
 
+btn.onclick = () => {
+  btn.classList.toggle("new-class");
+};
+
+document.onmousemove = (e) => {
+  console.log("X is ", e.clientX);
+  console.log("Y is ", e.clientY);
+};
+
 // onclick
 // ondblclick
 // onchange
 // onkeydown
 
-btn.onclick = (event) => {
-  console.log(event.target);
-  console.log("Button is clicked");
-};
+// document.onkeydown = (event) => {
+//   console.log(event);
+//   console.log("Pressing key ", event.key);
+// };
