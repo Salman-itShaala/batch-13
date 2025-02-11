@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+
+    <form>
+      <label for="firstName">Enter First Name</label>
+      <input
+        type="text"
+        id="firstName"
+        placeholder="Enter your name"
+        required
+        maxlength="16"
+        minlength="2"
+      />
+
+      <input type="password" placeholder="password" />
+      <input type="email" placeholder="Email" required />
+      <input
+        type="number"
+        placeholder="Enter your age"
+        min="0"
+        max="120"
+        step="2"
+      />
+      <fieldset>
+        <legend>Educational Information</legend>
+        <input type="date" />
+        <input type="time" />
+        <input type="file" />
+        <input type="range" />
+        <input type="search" />
+        <input type="hidden" value="secret_key" />
+      </fieldset>
+
+      <br />
+      <br />
+      <br />
+
+      <label for="language">Select language</label>
+      <select id="language" name="lang">
+        <option value="marathi">Marathi</option>
+        <option value="english">English</option>
+        <option value="hindi">Hindi</option>
+      </select>
+
+      <br />
+      <br />
+      <br />
+
+      <p>Select Gender:</p>
+      <input type="radio" id="female" value="female" name="gender" />
+      <label for="female">Female</label>
+      <br />
+      <input type="radio" id="male" value="male" name="gender" />
+      <label for="male">Male</label>
+      <br />
+      <input type="radio" id="others" value="others" name="gender" />
+      <label for="others">Others</label>
+      <br /><br />
+      <br />
+
+      <p>Select Your fav. cars</p>
+      <input type="checkbox" id="audi" value="audi" name="car-1" />
+      <label for="audi">Audi</label>
+      <br />
+      <input type="checkbox" id="merc" value="merc" name="car-2" />
+      <label for="merc">Merc</label>
+      <br />
+      <input type="checkbox" id="porche" value="porche" name="car-3" />
+      <label for="porche">Porche</label>
+
+      <br /><br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <br /><br />
+
+    <iframe
+      src="https://it-shaala-sigma.vercel.app/"
+      frameborder="1"
+      height="500"
+      width="500"
+    ></iframe>
+
+    <iframe src="https://www.youtube.com/" frameborder="0"></iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/HHGq31Jvisg?si=TUSlWnhjEAo3vl0-"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <video
+      src="https://media.istockphoto.com/id/1397265636/video/amazing-flock-of-birds-flying-come-to-the-camera-stock-video.mp4?s=mp4-640x640-is&k=20&c=18kVdA5sqwgQkEawVlAcuvJpcU0eVkXFvw_nOYlXZCI="
+      muted
+      loop
+      autoplay
+    ></video>
+  </body>
+</html>
