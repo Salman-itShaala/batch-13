@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-brand-color: #c2f578;
+  --common-padding: 0 8vw;
+  font-size: 10px;
+}
+
+.parent {
+  background-color: var(--primary-brand-color);
+  padding: var(--common-padding);
+  font-size: 10px;
+}
+
+.parent p {
+  font-size: 4em;
+  /* background-color: azure; */
+  /* 4 x 10px = 40px */
+}
+
+.parent p span {
+  font-size: 4em;
+  /* 4 x 40 = 160px */
+}
+.box {
+  padding: var(--common-padding);
+}
+
+.box p {
+  font-size: 4rem;
+  /* 4 x 10 = 40px */
+}
+
+.box p span {
+  font-size: 4rem;
+  /* 4 x 10 = 40px */
+}
