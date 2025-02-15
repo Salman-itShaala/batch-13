@@ -1,0 +1,49 @@
+/* child selector */
+.parent > h1 {
+  color: red;
+}
+
+h1::before {
+  content: "😊";
+}
+
+h1::after {
+  content: "😁";
+}
+
+/* .parent + div {
+  background-color: red;
+} */
+
+.parent ~ div {
+  background-color: green;
+}
+
+input:focus {
+  border: 4px solid green;
+  outline: none;
+}
+
+a {
+  color: blue;
+}
+
+a:visited {
+  color: yellow;
+}
+a:hover {
+  color: red;
+}
+
+p::selection {
+  background-color: green;
+}
+
+body::-webkit-scrollbar {
+  background-color: black;
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+}
