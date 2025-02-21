@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: aqua;
+  padding: 1rem;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  grid-auto-rows: 150px;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.child {
+  background-color: blueviolet;
+  border: 2px solid red;
+}
+
+@media (max-width: 640px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

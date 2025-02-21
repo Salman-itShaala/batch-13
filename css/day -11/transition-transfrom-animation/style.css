@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 4rem;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  transition: all 1s ease-in-out;
+  cursor: none;
+  rotate: 45deg;
+}
+
+.box:hover {
+  background-color: blue;
+  border-radius: 50%;
+}
+
+body {
+  position: relative;
+  cursor: none;
+}
+#cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 10px;
+}

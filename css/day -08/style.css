@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgb(225, 225, 225);
+  --text-color: rgb(43, 43, 43);
+}
+
+:root.dark {
+  --bg-color: rgb(12, 12, 12);
+  --text-color: rgb(129, 129, 129);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: red;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+button {
+  margin-top: 5rem;
+}
+
+.box {
+  height: min(100vh, 2000px);
+  width: max(50vw, 1000px);
+  background: linear-gradient(
+    216deg,
+    rgba(25, 0, 255, 1) 0%,
+    rgba(252, 8, 0, 1) 100%
+  );
+  background-repeat: no-repeat;
+  z-index: 999;
+  position: relative;
+}
+
+.box img {
+  width: 100%;
+}
+.box h1 {
+  position: absolute;
+  top: 50%;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}

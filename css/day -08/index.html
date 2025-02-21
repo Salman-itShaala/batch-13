@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Day - 08</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>I'm header</header>
+    <button onclick="toggleTheme()">Toggle theme</button>
+    <h1>This is h1</h1>
+
+    <div class="box">
+      <h1>Hii there</h1>
+    </div>
+
+    <div class="box">
+      <img
+        src="https://camo.githubusercontent.com/c2fd2f94aa55544327fc8ed8901aedb2eec8e3535243452b43646eb8086efe1a/68747470733a2f2f796176757a63656c696b65722e6769746875622e696f2f73616d706c652d696d616765732f696d6167652d34342e6a7067"
+        alt=""
+      />
+      <h1>This is caption</h1>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        document.documentElement.classList.toggle("dark");
+      }
+
+      function rgb(num1, num2, num3) {
+        console.log(num1 + num2 + num3);
+      }
+
+      rgb(1, 2, 4);
+    </script>
+  </body>
+</html>
