@@ -16,4 +16,4 @@
 //   }, 2000);
 // }, 2000);
 
-const myPromise = new Promise();
+// const myPromise = new Promise();
