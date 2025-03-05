@@ -9,16 +9,17 @@
   <body>
     <h1>Weather app</h1>
     <div class="city-input">
-      <input type="text" placeholder="Enter city" />
+      <input type="text" placeholder="Enter city" id="city-input" />
       <button onclick="sendReq()">Submit</button>
     </div>
     <div class="weather-data-wrapper">
-      <p>Pune, Maharashtra, India</p>
+      <p id="city-wrapper">Pune, Maharashtra, India</p>
       <div class="weather-data">
         <div class="img-wrapper">
           <img
             src="https://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png"
             alt=""
+            id="weather-img"
           />
           <p>Sunny</p>
         </div>
