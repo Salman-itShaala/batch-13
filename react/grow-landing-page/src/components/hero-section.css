@@ -1,0 +1,34 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.main-heading {
+  font-size: 6rem;
+  color: #44475b;
+  line-height: 6rem;
+}
+
+.main-sub-heading {
+  color: #7c7e8c;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+main img {
+  width: 80vw;
+}
+
+main a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #04ad83;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
