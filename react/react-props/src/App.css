@@ -1,0 +1,14 @@
+.my-li {
+  color: blue;
+  padding: 30px;
+  border: 1px solid blue;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

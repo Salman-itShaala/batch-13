@@ -1,9 +1,16 @@
 function Header({ firstName, lastName }) {
+  const isLoggedIn = true;
+
   return (
     <header>
-      <h1>
-        Welcome back {firstName} {lastName}
-      </h1>
+      {isLoggedIn ? (
+        <h1>
+          {" "}
+          Welcome back {firstName} {lastName}{" "}
+        </h1>
+      ) : (
+        <a href="/">Login</a>
+      )}
     </header>
   );
 }

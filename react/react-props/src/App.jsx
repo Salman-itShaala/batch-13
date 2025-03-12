@@ -3,13 +3,17 @@ import { FirstComponent } from "./components/FirstComponent";
 import Header from "./components/Header";
 
 function App() {
-  const fName = "Salman";
+  const sports = ["Cricket", "Football", "Hockey", "Kabaddi"];
 
   return (
     <div className="container">
-      <Header firstName={fName} lastName="shaikh" />
-
-      <FirstComponent />
+      {sports.map((sport) => {
+        return (
+          <div key={sport} className="my-li">
+            {sport}
+          </div>
+        );
+      })}
     </div>
   );
 }
