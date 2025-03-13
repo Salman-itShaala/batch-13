@@ -4,26 +4,15 @@ import { FirstComponent } from "./components/FirstComponent";
 import Header from "./components/Header";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  function increseCount() {
-    setCount(count + 1);
-  }
-
-  const decreseCount = () => {
-    setCount(count - 1);
-  };
+  const [isVisible, setIsVisible] = useState(false);
 
   return (
     <>
-      <h1>Count is {count}</h1>
-      <button onClick={increseCount}>Increse Count</button>
-      <br />
-      <br />
-      <button onClick={() => decreseCount()}>Descrese Count</button>
-      <br />
-      <br />
-      <button onClick={() => setCount(0)}>Reset</button>
+      <button onClick={() => setIsVisible(!isVisible)}>
+        Toggle visibility
+      </button>
+
+      {isVisible && <h1>Hii there</h1>}
     </>
   );
 }
