@@ -1,9 +1,6 @@
-import { useState } from "react";
-import "./App.css";
-import { FirstComponent } from "./components/FirstComponent";
-import Header from "./components/Header";
+import React, { useState } from "react";
 
-function App() {
+function Counter() {
   const [count, setCount] = useState(0);
 
   function increseCount() {
@@ -28,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default Counter;
