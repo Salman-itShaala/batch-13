@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(19, 19, 19);
+  color: rgb(234, 234, 234);
+}
+
+h1 {
+  text-align: center;
+  padding: 4vh 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.todos-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.todos-input-wrapper input,
+.todos-input-wrapper button {
+  padding: 10px;
+}
+
+.todos-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh;
+  flex-direction: column;
+  width: 100%;
+  padding: 4vh 0;
+}
+
+.todo {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  font-size: 20px;
+  padding: 2vh 0;
+}
+
+.todo button {
+  padding: 5px 10px;
+}
