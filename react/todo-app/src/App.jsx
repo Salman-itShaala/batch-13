@@ -3,18 +3,16 @@ import "./App.css";
 
 function App() {
   const [todos, setTodos] = useState([]);
-  // [
-  // {title : "Learn full stack dev", copleted : false, id : 12121},
-  //  {},
-  //  {}
-  // ]
+  const [todoInput, setTodoInput] = useState("");
 
   function addTodo() {
-    // replace
-    const todoValue = document.getElementById("todo-input").value;
+    if (todoInput == "") {
+      alert("Enter valid todo");
+      return;
+    }
 
     const newTodo = {
-      title: todoValue,
+      title: todoInput,
       completed: false,
       id: Date.now(),
     };
@@ -22,6 +20,8 @@ function App() {
     const updateArray = [...todos, newTodo];
 
     setTodos(updateArray);
+
+    setTodoInput("");
   }
 
   function deleteTodo(id) {
@@ -32,21 +32,42 @@ function App() {
     setTodos(updatedArray);
   }
 
+  function toggleComplete(id) {
+    const updateArray = todos.map((todo) => {
+      if (id == todo.id) {
+        todo.completed = !todo.completed;
+      }
+      return todo;
+    });
+
+    setTodos(updateArray);
+  }
+
   return (
     <>
       <h1>Todo App</h1>
 
       <div className="todos-input-wrapper">
-        <input type="text" id="todo-input" />
+        <input
+          type="text"
+          id="todo-input"
+          onChange={(event) => setTodoInput(event.target.value)}
+          value={todoInput}
+        />
         <button onClick={addTodo}>Add Todo</button>
       </div>
 
       <div className="todos-wrapper">
         {todos.map((todo) => {
           return (
-            <div key={todo.id} className="todo">
+            <div
+              key={todo.id}
+              className={`todo ${todo.completed ? "completed" : "incomplete"}`}
+            >
               <p>{todo.title}</p>
-              <button>Mark as done</button>
+              <button onClick={() => toggleComplete(todo.id)}>
+                {todo.completed ? "Mark as incomplete" : "Mark as complete"}
+              </button>
               <button onClick={() => deleteTodo(todo.id)}>Delete</button>
             </div>
           );

@@ -54,3 +54,11 @@ button {
 .todo button {
   padding: 5px 10px;
 }
+
+.completed {
+  color: rgb(61, 174, 61);
+}
+
+.incomplete {
+  color: rgb(255, 106, 0);
+}
