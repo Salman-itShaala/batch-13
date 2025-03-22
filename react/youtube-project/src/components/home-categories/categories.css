@@ -1,0 +1,33 @@
+.cat-parent {
+  overflow-x: auto;
+  width: calc(100vw - 6vw);
+}
+
+.cat-parent::-webkit-scrollbar {
+  display: none;
+}
+
+.home-categories-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem 0;
+  padding: var(--common-padding);
+  position: relative;
+  z-index: -999;
+  /* background-color: aqua; */
+  /* overflow-x: scroll; */
+}
+
+.home-categories-wrapper li {
+  min-width: fit-content;
+  background-color: var(--icons-bg-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+  z-index: -999;
+  /* font-weight: 600; */
+}

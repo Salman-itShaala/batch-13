@@ -1,0 +1,14 @@
+.sidebar {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 6vw;
+  /* background-color: aliceblue; */
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
