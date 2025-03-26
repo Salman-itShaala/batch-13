@@ -1,0 +1,12 @@
+.footerLeft {
+  background-color: aquamarine;
+  height: 40vh;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.container {
+  background-color: black;
+  color: white;
+  height: 40vh;
+}
