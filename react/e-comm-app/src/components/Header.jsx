@@ -20,7 +20,7 @@ const Header = () => {
         className="border border-black hover:to-blue-50"
       />
 
-      <button onClick={changeTheme}>Change theme</button>
+      {/* <button onClick={changeTheme}>Change theme</button> */}
     </header>
   );
 };
