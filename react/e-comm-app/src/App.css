@@ -9,3 +9,7 @@
 .common-padding {
   @apply px-[4vw] sm:px-[8vw];
 }
+/* 
+.random {
+  font-size: 8rem;
+} */
