@@ -1,6 +1,4 @@
 const Sports = (props) => {
-  console.log(props.sports1);
-
   if (!props.sports1) {
     return <h1>Something went wrong</h1>;
   }
@@ -15,7 +13,7 @@ const Sports = (props) => {
 
           <ol>
             {props.sports1.map((s) => {
-              return <li>{s}</li>;
+              return <li key={Math.random()}>{s}</li>;
             })}
           </ol>
         </div>

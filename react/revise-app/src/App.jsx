@@ -5,7 +5,14 @@ import NewComponent from "./NewComponent";
 function App() {
   const name = "salman";
 
-  const sports = ["Cricket", "Football", "Tennis", "Hockey", "Kabaddi"];
+  const sports = [
+    "Cricket",
+    "Football",
+    "Tennis",
+    "Hockey",
+    "Kabaddi",
+    "Kabaddi",
+  ];
 
   return (
     <div>

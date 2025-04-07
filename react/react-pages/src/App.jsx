@@ -9,19 +9,16 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <header>i'm header 123</header>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about/:id" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
   );
 }
-
-// <Home />
-// <Contact />
-// <About />
 
 export default App;

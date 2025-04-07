@@ -1,6 +1,5 @@
 function Header(props) {
-  console.log(props.userName);
-
+  
   return (
     <header>
       <a href="">Home</a>

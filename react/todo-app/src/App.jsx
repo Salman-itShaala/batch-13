@@ -73,8 +73,13 @@ function App() {
           );
         })}
       </div>
+      <TestComponent />
     </>
   );
+}
+
+function TestComponent() {
+  return <div>HIii</div>;
 }
 
 export default App;

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [searchValue, setSearchValue] = useState("");
+
   const [searchedProducts, setSearchedProducts] = useState([]);
 
   useEffect(() => {

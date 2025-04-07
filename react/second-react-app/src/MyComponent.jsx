@@ -1,4 +1,5 @@
 function MyComponent() {
+    
   // logic
 
   return (
