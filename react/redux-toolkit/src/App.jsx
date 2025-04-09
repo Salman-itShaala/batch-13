@@ -2,12 +2,10 @@ import { createContext, useContext, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-
-const CounterContext = createContext();
+import { useDispatch, useSelector } from "react-redux";
+import { changeByValue, decrement, increment } from "./slices/counterSlice";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const styleObj = {
     padding: "40px",
     border: "2px solid yellow",
@@ -17,10 +15,8 @@ function App() {
 
   return (
     <div style={styleObj}>
-      <CounterContext.Provider value={[count, setCount]}>
-        <Child1 />
-        <Child2 />
-      </CounterContext.Provider>
+      <Child1 />
+      <Child2 />
     </div>
   );
 }
@@ -35,11 +31,16 @@ function Child1() {
 }
 
 function GrandChild() {
-  const [count, setCount] = useContext(CounterContext);
+  const counter = useSelector((state) => state.counter.value);
+
+  const dispatch = useDispatch();
+
   return (
     <div style={{ padding: "40px", border: "2px solid white" }}>
-      <h2>I'm Child 1 and count is : {count}</h2>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <h2>I'm Child 1 and count is : {counter}</h2>
+      <button onClick={() => dispatch(increment())}>Click me</button>
+      <button onClick={() => dispatch(decrement())}>Click me</button>
+      <button onClick={() => dispatch(changeByValue(10))}>Click me</button>
     </div>
   );
 }
