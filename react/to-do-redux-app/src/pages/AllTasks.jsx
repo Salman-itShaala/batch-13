@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AddTodoForm from "../components/AddTodoForm";
 import { useDispatch, useSelector } from "react-redux";
-import { removeTodo } from "../features/todoSlice/todoSlice";
+import { getTodos, removeTodo } from "../features/todoSlice/todoSlice";
 
 const AllTasks = () => {
   const [showForm, setShowForm] = useState(false);
 
   const todosState = useSelector((state) => state.todos); // {todos : []}
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getTodos());
+  }, []);
 
   return (
     <div className="ml-[20vw] bg-neutral-800 p-4 min-h-screen text-neutral-200">
